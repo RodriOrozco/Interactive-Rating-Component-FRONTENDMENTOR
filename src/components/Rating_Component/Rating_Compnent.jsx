@@ -1,10 +1,23 @@
 import React from "react";
 import "./rating_component.scss";
 
-const Rating_Compnent = () => {
+const Rating_Compnent = ({ setRatingSend }) => {
   return (
     <div>
-      <h1>sdasd</h1>
+      <img src="" alt="star" />
+      <h3>How did we do?</h3>
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <form action="">
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+      </form>
+      <button>Submit</button>
     </div>
   );
 };
