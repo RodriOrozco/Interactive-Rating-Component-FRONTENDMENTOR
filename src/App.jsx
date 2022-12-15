@@ -1,15 +1,23 @@
-import "./App.css";
+import "./sass/main.scss";
 
 function App() {
   return (
     <div className="App">
-      <div class="attribution">
+      <footer className="attribution">
         Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noreferrer"
+        >
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Your Name Here</a>.
-      </div>
+        . Coded by{" "}
+        <a href="https://rodrigo-orozco-front-end.vercel.app/">
+          Rodrigo Orozco
+        </a>
+        .
+      </footer>
     </div>
   );
 }
