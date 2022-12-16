@@ -13,7 +13,8 @@ const Footer = () => {
         Frontend Mentor
       </a>
       . Coded by{" "}
-      <a href="https://rodrigo-orozco-front-end.vercel.app/">Rodrigo Orozco</a>.
+      <a href="https://rodrigo-orozco-front-end.vercel.app/"> Rodrigo Orozco</a>
+      .
     </footer>
   );
 };

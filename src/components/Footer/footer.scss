@@ -1,11 +1,16 @@
 @import "../../sass/styleImports.scss";
 
 .attribution {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 11px;
   text-align: center;
   color: $color-neutral-white;
 
   a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 61%, 56%);
   }
 }

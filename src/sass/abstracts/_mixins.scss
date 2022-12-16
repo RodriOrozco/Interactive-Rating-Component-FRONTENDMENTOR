@@ -1,0 +1,25 @@
+@mixin flex-config($disp, $dir, $cut, $just, $alig) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $cut;
+  justify-content: $just;
+  align-items: $alig;
+}
+
+@mixin responsive-min($minimun-width) {
+  @media only screen and (min-width: $minimun-width) {
+    @content;
+  }
+}
+
+@mixin responsive-max($maximum-width) {
+  @media only screen and (min-width: $maximum-width) {
+    @content;
+  }
+}
+
+@mixin responsive-between($minimun-width, $maximum-width) {
+  @media only screen and (min-width: $minimun-width) and (max-width: $maximum-width) {
+    @content;
+  }
+}
