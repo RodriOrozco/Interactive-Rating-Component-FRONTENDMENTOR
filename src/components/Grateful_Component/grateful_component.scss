@@ -1,7 +1,41 @@
 @import "../../sass/styleImports.scss";
 
 .back-container {
-  border: 1px solid white;
-  width: 30%;
-  height: 35rem;
+  width: 100%;
+  height: 100%;
+  @include flex-config(flex, column, nowrap, space-between, center);
+
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+  &__selected {
+    text-align: center;
+    width: 18rem;
+    padding: 1rem 0;
+    margin: 1rem 0 0 0;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: $color-primary-orange;
+    background-color: $color-neutral-darkgrey;
+    font-family: $font-general;
+  }
+
+  .text-container {
+    width: 100%;
+    gap: 1rem;
+    @include flex-config(flex, column, nowrap, space-between, center);
+
+    &__title {
+      font-size: 2.5rem;
+      font-family: $font-general;
+      color: $color-neutral-white;
+    }
+    &__paragraph {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: $font-general;
+      color: $color-neutral-grey;
+    }
+  }
 }

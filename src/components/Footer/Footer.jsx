@@ -4,7 +4,7 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <footer className="attribution">
-      Challenge by{" "}
+      Challenge by &nbsp;
       <a
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
@@ -12,7 +12,7 @@ const Footer = () => {
       >
         Frontend Mentor
       </a>
-      . Coded by{" "}
+      .&nbsp; Coded by &nbsp;
       <a href="https://rodrigo-orozco-front-end.vercel.app/"> Rodrigo Orozco</a>
       .
     </footer>

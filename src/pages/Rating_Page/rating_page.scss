@@ -7,10 +7,21 @@
   align-items: center;
   justify-content: center;
   &__both-components {
-    width: 30%;
+    width: 38rem;
     height: 35rem;
     padding: 3rem;
     border-radius: 2rem;
     background-color: $color-neutral-blue;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+      both;
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+    @include responsive-max(432px) {
+      width: 90%;
+      height: 38rem;
+    }
+    @include responsive-max(395px) {
+      padding: 3rem 1.8rem;
+    }
   }
 }
